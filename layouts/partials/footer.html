@@ -25,5 +25,10 @@
 		{{ if .Site.Params.HighlightJs }}
 		<script>hljs.initHighlightingOnLoad();</script>
 		{{ end }}
+		{{ if .Site.Params.UseClicky }}
+		<script defer src="//static.getclicky.com/{{ .Site.Params.ClickyId }}.js"></script>
+		<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/{{ .Site.Params.ClickyId }}ns.gif" /></p></noscript>
+		{{ end }}
+
 	</body>
 </html>
