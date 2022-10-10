@@ -26,9 +26,8 @@
 		<script>hljs.initHighlightingOnLoad();</script>
 		{{ end }}
 		{{ if .Site.Params.UseClicky }}
-		<a title="Privacy-friendly Web Analytics" href="https://clicky.com/{{ .Site.Params.ClickyId }}"><img alt="" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
 		<script async src="//static.getclicky.com/{{ .Site.Params.ClickyId }}.js"></script>
-		<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/{{ .Site.Params.ClickyId }}ns.gif" /></p></noscript>		
+		<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/{{ .Site.Params.ClickyId }}ns.gif" /></p></noscript>
 		{{ end }}
 
 	</body>
