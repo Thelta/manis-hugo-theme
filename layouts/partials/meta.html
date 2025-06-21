@@ -18,6 +18,10 @@
 		<script defer src="/js/dark-mode.js"></script>
 		<link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
+		
+		{{ if .Site.Params.vercel_analytics.enable }}
+		<script defer src="/_vercel/insights/script.js"></script>
+		{{ end }}
 
 		{{ if .Site.Params.HighlightJs }}
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{- .Site.Params.HighlightJsStyle -}}.min.css">
