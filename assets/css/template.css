@@ -182,6 +182,12 @@ ul.no-bullet {
   color: #666;
   font-family: monospace;
 }
+
+/* Smaller tags in article pages */
+span.no-print a {
+  font-size: 1.2rem;
+  color: #666;
+}
 @media (min-width: 40rem) {
   .no-bullet span {
     margin-right: 1rem;
@@ -211,10 +217,12 @@ pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre-wrap;
-  background: #2b303b;
-  color: #c0c5ce;
+  background: #f6f8fa;
+  color: #24292e;
   font-family: 'Fira Mono', monospace;
   overflow-wrap: break-word;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
 }
 
 /* #Tables
